@@ -183,6 +183,10 @@
         .about-wrapper { display: flex; flex-direction: column; align-items: center; gap: 30px; text-align: center; }
         @media(min-width: 600px) { .about-wrapper { flex-direction: row; text-align: left; align-items: stretch; } }
         .about-profile-pic { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-color); box-shadow: 0 10px 25px var(--accent-glow); flex-shrink: 0; margin: 0 auto;}
+        
+        /* Nova classe para a foto da Nutri (retangular) */
+        .nutri-img { width: 100%; max-width: 320px; border-radius: var(--border-radius); object-fit: cover; border: 1px solid var(--border-glass); box-shadow: var(--shadow-soft); flex-shrink: 0; margin: 0 auto; }
+        
         .about-content { flex: 1; }
         .about-title { font-size: 1.2rem; font-weight: 700; color: var(--text-main-color); margin-bottom: 15px; font-family: var(--title-font); text-transform: uppercase; letter-spacing: 0.5px;}
         .about-text { font-size: 0.95rem; color: var(--text-secondary-color); margin-bottom: 15px; }
@@ -203,7 +207,7 @@
         .step-desc { font-size: 0.95rem; color: var(--text-secondary-color); line-height: 1.5; }
 
         /* --- LISTA DE BENEFÍCIOS --- */
-        .benefits-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; font-size: 0.95rem; font-weight: 600; color: var(--text-main-color); }
+        .benefits-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; font-size: 0.95rem; font-weight: 600; color: var(--text-secondary-color); }
         .benefits-list i { color: var(--text-main-color); font-size: 1.2rem; }
         .benefits-list i.fa-times { color: #555; }
 
@@ -245,6 +249,30 @@
             background: linear-gradient(to top, rgba(15, 17, 18, 0.95) 0%, rgba(15, 17, 18, 0.6) 50%, rgba(15, 17, 18, 0) 100%);
             display: flex; flex-direction: column; z-index: 2; text-align: left;
         }
+
+        /* --- BADGES NÍVEL DE TREINO --- */
+        .level-badges {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        .level-badge {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(4px);
+        }
+        .level-badge.iniciante { border-color: #4ade80; color: #4ade80; background: rgba(74, 222, 128, 0.1); }
+        .level-badge.intermediario { border-color: #fbbf24; color: #fbbf24; background: rgba(251, 191, 36, 0.1); }
+        .level-badge.avancado { border-color: #f87171; color: #f87171; background: rgba(248, 113, 113, 0.1); }
+
         .service-img-title { font-size: 1.6rem; font-weight: 700; color: #ffffff; font-family: var(--title-font); text-transform: uppercase; line-height: 1.2; }
 
         /* --- PLANOS CARDS --- */
@@ -514,49 +542,120 @@
             <div class="carousel-wrapper">
                 <div class="carousel-track">
                     <article class="service-img-card fade-up" style="transition-delay: 0.1s;">
-                        <img src="./treino-das-musas.jpeg" alt="Treinos em Casa">
+                        <img src="./treino-em-casa.jpeg" alt="Treinos em Casa">
                         <div class="service-img-content">
+                            <div class="level-badges">
+                                <span class="level-badge iniciante">Iniciante</span>
+                                <span class="level-badge intermediario">Intermediário</span>
+                                <span class="level-badge avancado">Avançado</span>
+                            </div>
                             <h3 class="service-img-title">TREINOS EM CASA</h3>
                         </div>
                     </article>
 
                     <article class="service-img-card fade-up" style="transition-delay: 0.2s;">
-                        <img src="./treino-em-casa.jpeg" alt="Gestante Leo Team">
+                        <img src="./treino-gestante.jpeg" alt="Gestante Leo Team">
                         <div class="service-img-content">
+                            <div class="level-badges">
+                                <span class="level-badge iniciante">Iniciante</span>
+                                <span class="level-badge intermediario">Intermediário</span>
+                                <span class="level-badge avancado">Avançado</span>
+                            </div>
                             <h3 class="service-img-title">GESTANTE LEO TEAM</h3>
                         </div>
                     </article>
 
                     <article class="service-img-card fade-up" style="transition-delay: 0.3s;">
-                        <img src="./treino-gestante.jpeg" alt="Treinos R1">
+                        <img src="./treinor1.jpeg" alt="Treinos R1">
                         <div class="service-img-content">
+                            <div class="level-badges">
+                                <span class="level-badge iniciante">Iniciante</span>
+                                <span class="level-badge intermediario">Intermediário</span>
+                                <span class="level-badge avancado">Avançado</span>
+                            </div>
                             <h3 class="service-img-title">TREINOS R1</h3>
                         </div>
                     </article>
 
                     <article class="service-img-card fade-up" style="transition-delay: 0.4s;">
-                        <img src="./treino-na-academia.jpeg" alt="Treinos das Musas">
+                        <img src="./treino-das-musas.jpeg" alt="Treinos das Musas">
                         <div class="service-img-content">
+                            <div class="level-badges">
+                                <span class="level-badge iniciante">Iniciante</span>
+                                <span class="level-badge intermediario">Intermediário</span>
+                                <span class="level-badge avancado">Avançado</span>
+                            </div>
                             <h3 class="service-img-title">TREINOS DAS MUSAS</h3>
                         </div>
                     </article>
                     
-
                     <article class="service-img-card fade-up" style="transition-delay: 0.6s;">
-                        <img src="./treinor1.jpeg" alt="Planos Alimentares">
+                        <img src="" alt="Planos Alimentares">
                         <div class="service-img-content">
+                            <div class="level-badges">
+                                <span class="level-badge iniciante">Iniciante</span>
+                                <span class="level-badge intermediario">Intermediário</span>
+                                <span class="level-badge avancado">Avançado</span>
+                            </div>
                             <h3 class="service-img-title">PLANOS ALIMENTARES</h3>
                         </div>
                     </article>
                     
                     <article class="service-img-card fade-up" style="transition-delay: 0.7s;">
-                        <img src="WhatsApp%20Image%202026-04-18%20at%2020.58.46.jpeg" alt="Modalidades Cardio">
+                        <img src="" alt="Modalidades Cardio">
                         <div class="service-img-content">
+                            <div class="level-badges">
+                                <span class="level-badge iniciante">Iniciante</span>
+                                <span class="level-badge intermediario">Intermediário</span>
+                                <span class="level-badge avancado">Avançado</span>
+                            </div>
                             <h3 class="service-img-title">MODALIDADES CARDIO</h3>
+                        </div>
+                    </article>
+
+                    <article class="service-img-card fade-up" style="transition-delay: 0.7s;">
+                        <img src="./treino-na-academia.jpeg" alt="Modalidades Cardio">
+                        <div class="service-img-content">
+                            <div class="level-badges">
+                                <span class="level-badge iniciante">Iniciante</span>
+                                <span class="level-badge intermediario">Intermediário</span>
+                                <span class="level-badge avancado">Avançado</span>
+                            </div>
+                            <h3 class="service-img-title">TREINO NA ACADEMIA</h3>
                         </div>
                     </article>
                 </div>
             </div>
+        </section>
+
+        <section id="dicas-nutri">
+            <div class="section-header fade-up">
+                <h2>Dicas da Nutri</h2>
+                <span class="section-subtitle">Alimentação inteligente para potencializar seus resultados.</span>
+            </div>
+            
+            <article class="card about-wrapper fade-up" style="transition-delay: 0.1s;">
+                <img src="./nutri.jpeg" alt="Nutricionista parceira dando dicas de alimentação" class="nutri-img">
+                <div class="about-content">
+                    <h3 class="about-title">O segredo está no <span class="highlight">Equilíbrio</span></h3>
+                    
+                    <p class="about-text">
+                        Treinar pesado é apenas metade do caminho. Para construir músculos, secar e ter energia, o que você coloca no prato é fundamental. Confira algumas dicas rápidas da nossa Nutricionista parceira:
+                    </p>
+                    
+                    <ul class="benefits-list" style="margin-top: 20px; text-align: left;">
+                        <li><i class="fas fa-apple-alt"></i> <span><strong>Frutas no Pré-Treino:</strong> Excelentes fontes de energia rápida para você render mais na academia sem pesar no estômago.</span></li>
+                        <li><i class="fas fa-tint"></i> <span><strong>A Regra da Água:</strong> Beba pelo menos 35ml a 40ml de água por kg de peso corporal todos os dias. A hidratação ajuda na definição e na força.</span></li>
+                        <li><i class="fas fa-drumstick-bite"></i> <span><strong>Proteína é a Base:</strong> Garanta uma boa fonte de proteína em todas as suas refeições principais para manter a saciedade e construir massa magra.</span></li>
+                    </ul>
+
+                    <p class="about-text" style="font-size: 0.95rem; margin-top: 25px; font-weight: 600;">
+                        Lembrando que nossa Consultoria Online inclui <span class="highlight">1 Consulta VIP com a Nutricionista</span> para alinhar sua dieta aos seus treinos!
+                    </p>
+
+                    <a href="#planos-consultoria" class="btn-solid" style="display: inline-block; width: auto; padding: 15px 30px; margin-top: 15px; text-decoration: none;">Ver Planos com Nutri Inclusa</a>
+                </div>
+            </article>
         </section>
 
         <section id="planos-consultoria">
