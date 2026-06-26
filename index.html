@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
     <title>Leo Silva | Personal Trainer Premium</title>
-    <meta name="description" content="Leo Silva Personal Trainer. Especialista em ajudar mulheres a conquistarem um corpo mais forte, definido e saudável.">
+    <meta name="description" content="Leo Silva Personal Trainer. Especialista em ajudar mulheres a conquistarem um corpo mais forte, definido e saudável com consultoria online e presencial.">
     <meta name="keywords" content="leo silva personal trainer, treinador físico, personal trainer online, hipertrofia feminina, emagrecimento, treino para mulheres">
     <meta name="author" content="Leo Silva">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://leosilvapersonal.com">
 
     <meta name="theme-color" content="#16181a" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#f0f2f5" media="(prefers-color-scheme: light)">
 
-    <meta property="og:title" content="Leo Silva | Personal Trainer">
-    <meta property="og:description" content="Transformando corpos, fortalecendo a mente e elevando a autoestima.">
-    <meta property="og:image" content="./logo.jpeg">
+    <meta property="og:title" content="Leo Silva | Personal Trainer Premium">
+    <meta property="og:description" content="Transformando corpos, fortalecendo a mente e elevando a autoestima com treinamento personalizado.">
+    <meta property="og:image" content="./image/logo.jpeg">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://leosilvapersonal.com">
 
     <script type="application/ld+json">
     {
@@ -26,7 +28,7 @@
       "name": "Leo Silva Personal Trainer",
       "image": "logo.jpeg",
       "description": "Consultoria online e presencial de treinamento físico feminino com foco em resultados reais e duradouros.",
-      "telephone": "+554891049153",
+      "telephone": "+5521993912368",
       "priceRange": "$$$",
       "address": {
         "@type": "PostalAddress",
@@ -35,395 +37,57 @@
     }
     </script>
 
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* --- VARIÁVEIS CSS (TEMA PADRÃO: ESCURO/GRAFITE) --- */
-        :root {
-            --bg-color: #16181a; 
-            --section-bg-color: #1e2124; 
-            --card-bg-color: #23272a;
-            --text-main-color: #ffffff; 
-            --text-secondary-color: #a0a5aa; 
-            --accent-color: #ffffff; 
-            --accent-glow: rgba(255, 255, 255, 0.1);
-            --btn-text-solid: #16181a; 
-            --border-glass: rgba(255, 255, 255, 0.1);
-            --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
-            --input-bg: rgba(22, 24, 26, 0.9);
-            --gradient-featured: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, #23272a 100%);
-            --action-gradient: linear-gradient(135deg, #ffffff 0%, #cccccc 100%); 
-            
-            --title-font: 'Oswald', sans-serif;
-            --font-body: 'Montserrat', sans-serif;
-            
-            --max-width: 800px;
-            --section-padding: 60px 20px;
-            --border-radius: 20px; 
-        }
-
-        /* --- TEMA CLARO (ALTO CONTRASTE) --- */
-        body.light-theme {
-            --bg-color: #f0f2f5; 
-            --section-bg-color: #ffffff; 
-            --card-bg-color: #f8f9fa;
-            --text-main-color: #16181a; 
-            --text-secondary-color: #555b61; 
-            --accent-color: #16181a; 
-            --accent-glow: rgba(0, 0, 0, 0.15);
-            --btn-text-solid: #ffffff; 
-            --border-glass: rgba(0, 0, 0, 0.1);
-            --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
-            --input-bg: #ffffff;
-            --gradient-featured: linear-gradient(180deg, rgba(0, 0, 0, 0.03) 0%, #ffffff 100%);
-            --action-gradient: linear-gradient(135deg, #2c3035 0%, #16181a 100%);
-        }
-
-        /* --- RESET E CLASSES UTILITÁRIAS --- */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-body); }
-        html { scroll-behavior: smooth; font-size: 16px; }
-        body { background-color: var(--bg-color); color: var(--text-main-color); line-height: 1.6; overflow-x: hidden; transition: background-color 0.4s ease, color 0.4s ease; }
-        a { text-decoration: none; color: inherit; }
-        ul { list-style: none; }
-        img { max-width: 100%; height: auto; display: block; }
-        button, a, .card, .btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        
-        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
-
-        /* --- ANIMAÇÕES DE SCROLL --- */
-        .fade-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-            will-change: opacity, transform;
-        }
-        .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-        /* --- BACKGROUND FIXO --- */
-        .bg-fixed {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
-            background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop'); 
-            background-size: cover; background-position: center;
-            z-index: -2; opacity: 0.08; filter: grayscale(100%);
-        }
-
-        .container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
-
-        /* --- BOTÕES FLUTUANTES --- */
-        .theme-toggle {
-            position: fixed; top: 20px; right: 20px; z-index: 1000;
-            background: var(--section-bg-color); border: 1px solid var(--border-glass);
-            color: var(--text-main-color); width: 45px; height: 45px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center; cursor: pointer;
-            box-shadow: var(--shadow-soft);
-        }
-        .theme-toggle:hover { transform: scale(1.1); background: var(--action-gradient); color: var(--btn-text-solid); border-color: transparent; }
-        .theme-toggle i { font-size: 1.3rem; }
-
-        .share-container {
-            position: fixed; top: 20px; left: 20px; z-index: 1000;
-            display: flex; flex-direction: column; gap: 10px; align-items: center;
-        }
-        .share-toggle {
-            background: var(--section-bg-color); border: 1px solid var(--border-glass);
-            color: var(--text-main-color); width: 45px; height: 45px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center; cursor: pointer;
-            box-shadow: var(--shadow-soft); transition: all 0.3s ease;
-        }
-        .share-toggle:hover { transform: scale(1.1); background: var(--action-gradient); color: var(--btn-text-solid); border-color: transparent; }
-        .share-toggle i { font-size: 1.2rem; }
-        
-        .share-menu {
-            display: flex; flex-direction: column; gap: 8px;
-            opacity: 0; pointer-events: none; transform: translateY(-10px);
-            transition: all 0.3s ease;
-        }
-        .share-menu.active { opacity: 1; pointer-events: auto; transform: translateY(0); }
-        .share-menu button {
-            background: var(--section-bg-color); border: 1px solid var(--border-glass);
-            color: var(--text-main-color); width: 40px; height: 40px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center; cursor: pointer;
-            box-shadow: var(--shadow-soft); transition: all 0.3s ease;
-        }
-        .share-menu button:hover { background: var(--action-gradient); color: var(--btn-text-solid); border-color: transparent; transform: scale(1.1); }
-        .share-menu button i { font-size: 1.1rem; }
-
-        /* --- CABEÇALHO --- */
-        .hero { padding: 80px 20px 40px; text-align: center; }
-        .hero-logo { width: 100%; max-width: 250px; margin: 0 auto 25px; object-fit: contain; }
-        .hero-bio { font-size: 1.1rem; color: var(--text-secondary-color); font-weight: 400; max-width: 600px; margin: 0 auto 30px; line-height: 1.5; }
-        
-        .action-grid { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-        .btn-action {
-            flex: 1; min-width: 160px; max-width: 200px;
-            background: var(--section-bg-color); border: 1px solid var(--border-glass);
-            border-radius: 12px; padding: 15px; display: flex; flex-direction: column; align-items: center; gap: 8px;
-            box-shadow: var(--shadow-soft);
-        }
-        .btn-action:hover { background: var(--action-gradient); border-color: transparent; transform: translateY(-5px); box-shadow: 0 15px 25px var(--accent-glow); }
-        .btn-action i { font-size: 1.5rem; color: var(--text-main-color); }
-        .btn-action span { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-main-color); }
-        .btn-action:hover i, .btn-action:hover span { color: var(--btn-text-solid); }
-
-        /* --- SEÇÕES GERAIS --- */
-        section { padding: 40px 0; margin-bottom: 20px; }
-        .section-header { margin-bottom: 30px; text-align: center; }
-        .section-header h2 { font-family: var(--title-font); font-size: 2.2rem; color: var(--text-main-color); font-weight: 700; line-height: 1.2; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;}
-        .section-subtitle { font-size: 0.95rem; color: var(--text-secondary-color); font-weight: 500; }
-
-        .card {
-            background: var(--section-bg-color); border: 1px solid var(--border-glass);
-            border-radius: var(--border-radius); padding: 35px 30px; box-shadow: var(--shadow-soft);
-        }
-        
-        /* --- SEÇÃO: SOBRE --- */
-        .about-wrapper { display: flex; flex-direction: column; align-items: center; gap: 30px; text-align: center; }
-        @media(min-width: 600px) { .about-wrapper { flex-direction: row; text-align: left; align-items: stretch; } }
-        .about-profile-pic { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-color); box-shadow: 0 10px 25px var(--accent-glow); flex-shrink: 0; margin: 0 auto;}
-        
-        /* Nova classe para a foto da Nutri (retangular) */
-        .nutri-img { width: 100%; max-width: 320px; border-radius: var(--border-radius); object-fit: cover; border: 1px solid var(--border-glass); box-shadow: var(--shadow-soft); flex-shrink: 0; margin: 0 auto; }
-        
-        .about-content { flex: 1; }
-        .about-title { font-size: 1.2rem; font-weight: 700; color: var(--text-main-color); margin-bottom: 15px; font-family: var(--title-font); text-transform: uppercase; letter-spacing: 0.5px;}
-        .about-text { font-size: 0.95rem; color: var(--text-secondary-color); margin-bottom: 15px; }
-        .highlight { color: var(--text-main-color); font-weight: 700; }
-        .about-stats { display: flex; gap: 20px; margin-top: 25px; justify-content: center; flex-wrap: wrap; }
-        @media(min-width: 600px) { .about-stats { justify-content: flex-start; } }
-        .stat-item { text-align: center; background: var(--card-bg-color); padding: 10px 15px; border-radius: 12px; border: 1px solid var(--border-glass); flex: 1; min-width: 100px;}
-        .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--text-main-color); font-family: var(--title-font); }
-        .stat-label { font-size: 0.7rem; text-transform: uppercase; color: var(--text-secondary-color); font-weight: 600; letter-spacing: 0.5px;}
-
-        /* --- SEÇÃO: COMO FUNCIONA (LISTA) --- */
-        .steps-container { display: flex; flex-direction: column; gap: 25px; text-align: left; }
-        .step-item { display: flex; align-items: flex-start; gap: 18px; }
-        .step-icon { flex-shrink: 0; width: 50px; height: 50px; background: var(--card-bg-color); border: 1px solid var(--border-glass); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-main-color); font-size: 1.3rem; box-shadow: var(--shadow-soft); transition: all 0.3s ease; }
-        .step-item:hover .step-icon { transform: scale(1.1); background: var(--text-main-color); color: var(--bg-color); border-color: transparent;}
-        .step-content { flex: 1; padding-top: 2px;}
-        .step-title { font-family: var(--title-font); font-size: 1.15rem; font-weight: 700; color: var(--text-main-color); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
-        .step-desc { font-size: 0.95rem; color: var(--text-secondary-color); line-height: 1.5; }
-
-        /* --- LISTA DE BENEFÍCIOS --- */
-        .benefits-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; font-size: 0.95rem; font-weight: 600; color: var(--text-secondary-color); }
-        .benefits-list i { color: var(--text-main-color); font-size: 1.2rem; }
-        .benefits-list i.fa-times { color: #555; }
-
-        /* --- CARROSSEL --- */
-        .carousel-wrapper { margin: 0 -20px; padding: 10px 20px 25px 20px; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; }
-        .carousel-wrapper::-webkit-scrollbar { display: none; }
-        .carousel-track { display: flex; gap: 20px; }
-        .flex-wrap-container { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
-
-        /* --- CARDS DE SERVIÇOS (IMAGEM) COM CORREÇÃO SAFARI --- */
-        .service-img-card, .resultado-card {
-            flex: 0 0 280px; 
-            border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-soft);
-            border: 1px solid var(--border-glass); position: relative; background: var(--card-bg-color);
-            cursor: pointer;
-            
-            /* Hacks essenciais para arredondamento de imagem não estourar no Safari */
-            -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-            isolation: isolate;
-            -webkit-mask-image: -webkit-radial-gradient(white, black);
-        }
-        .service-img-card { height: 380px; }
-        .resultado-card { height: 350px; }
-
-        .service-img-card img, .resultado-card img {
-            width: 100%; height: 100%; object-fit: cover; display: block;
-        }
-        
-        .service-img-card img { transition: transform 0.6s ease, filter 0.6s ease; filter: brightness(0.7); }
-        .service-img-card:hover img { transform: scale(1.08); filter: brightness(0.4); }
-        
-        .resultado-img { filter: grayscale(20%); transition: filter 0.3s; }
-        .resultado-card:hover .resultado-img { filter: grayscale(0%); }
-
-        .service-img-content {
-            position: absolute; bottom: 0; left: 0; width: 100%;
-            padding: 40px 20px 25px;
-            background: linear-gradient(to top, rgba(15, 17, 18, 0.95) 0%, rgba(15, 17, 18, 0.6) 50%, rgba(15, 17, 18, 0) 100%);
-            display: flex; flex-direction: column; z-index: 2; text-align: left;
-        }
-
-        /* --- BADGES NÍVEL DE TREINO --- */
-        .level-badges {
-            display: flex;
-            gap: 6px;
-            margin-bottom: 8px;
-            flex-wrap: wrap;
-        }
-        .level-badge {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #ffffff;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.65rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            backdrop-filter: blur(4px);
-        }
-        .level-badge.iniciante { border-color: #4ade80; color: #4ade80; background: rgba(74, 222, 128, 0.1); }
-        .level-badge.intermediario { border-color: #fbbf24; color: #fbbf24; background: rgba(251, 191, 36, 0.1); }
-        .level-badge.avancado { border-color: #f87171; color: #f87171; background: rgba(248, 113, 113, 0.1); }
-
-        .service-img-title { font-size: 1.6rem; font-weight: 700; color: #ffffff; font-family: var(--title-font); text-transform: uppercase; line-height: 1.2; }
-
-        /* --- PLANOS CARDS --- */
-        .plan-card {
-            flex: 1; min-width: 280px; max-width: 350px; background: var(--card-bg-color); border: 1px solid var(--border-glass);
-            border-radius: var(--border-radius); padding: 30px 25px; box-shadow: var(--shadow-soft);
-            display: flex; flex-direction: column; position: relative; text-align: center;
-        }
-        .plan-card.featured { background: var(--gradient-featured); border-color: var(--text-main-color); }
-        .plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--action-gradient); color: var(--btn-text-solid); padding: 5px 15px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; border-radius: 20px; letter-spacing: 1px; white-space: nowrap; box-shadow: 0 4px 10px rgba(0,0,0,0.2);}
-        .plan-title { font-family: var(--title-font); font-size: 1.5rem; color: var(--text-main-color); margin-bottom: 5px; text-transform: uppercase; text-align: center; margin-top: 10px;}
-        .plan-price { font-size: 1.1rem; font-weight: 700; color: var(--text-main-color); margin: 15px 0 5px; font-family: var(--title-font); }
-        .plan-price span { font-size: 2.2rem; margin: 0 5px;}
-        .plan-price-sub { font-size: 0.85rem; color: var(--text-secondary-color); margin-bottom: 20px; font-weight: 500;}
-        .gender-highlight { display: table; font-size: 0.75rem; font-weight: 700; color: var(--text-secondary-color); border: 1px solid var(--border-glass); padding: 4px 12px; border-radius: 12px; text-transform: uppercase; margin: 0 auto 10px; }
-        .plan-features { margin-bottom: 25px; flex-grow: 1; text-align: left;}
-        .plan-features li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: 0.9rem; color: var(--text-secondary-color); }
-        .plan-features i { font-size: 0.9rem; margin-top: 4px; }
-        .plan-features i.fa-check { color: var(--text-main-color); }
-        .bonus-highlight { color: var(--text-main-color); font-weight: 700; margin-top: 15px; display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem;}
-        .bonus-highlight i { font-size: 1rem; }
-        
-        .section-divider {
-            text-align: center; margin: 50px 0 30px; font-family: var(--title-font); color: var(--text-main-color);
-            letter-spacing: 1px; text-transform: uppercase; font-size: 1.4rem; position: relative;
-        }
-        
-        /* --- FEEDBACKS CARDS --- */
-        .feedback-card {
-            flex: 0 0 320px; background: var(--card-bg-color); border: 1px solid var(--border-glass);
-            border-radius: var(--border-radius); padding: 30px 25px; box-shadow: var(--shadow-soft);
-            display: flex; flex-direction: column; gap: 15px; position: relative;
-        }
-        .feedback-icon { font-size: 2rem; color: var(--text-main-color); opacity: 0.15; position: absolute; top: 20px; right: 25px; }
-        .feedback-stars i { color: #d4af37; font-size: 0.85rem; margin-bottom: 5px;}
-        .feedback-text { font-size: 0.95rem; font-style: italic; color: var(--text-secondary-color); line-height: 1.6; z-index: 1; flex-grow: 1;}
-        .feedback-author { font-size: 1rem; font-weight: 800; color: var(--text-main-color); margin-top: auto; text-transform: uppercase; font-family: var(--title-font);}
-
-        /* Botões Base */
-        .btn-solid { width: 100%; background: var(--action-gradient); color: var(--btn-text-solid); border: none; border-radius: 12px; padding: 15px; font-weight: 800; text-transform: uppercase; font-size: 0.9rem; cursor: pointer; text-align: center; }
-        .btn-outline { width: 100%; background: transparent; color: var(--text-main-color); border: 1px solid var(--text-main-color); border-radius: 12px; padding: 15px; font-weight: 800; text-transform: uppercase; font-size: 0.9rem; cursor: pointer; text-align: center; }
-        .btn-solid:hover, .btn-outline:hover { transform: translateY(-3px); box-shadow: 0 10px 20px var(--accent-glow); }
-        .btn-outline:hover { background: var(--action-gradient); color: var(--btn-text-solid); border-color: transparent;}
-
-        /* --- O QUE VOCÊ VAI RECEBER (FAQ) --- */
-        .faq-container { display: flex; flex-direction: column; gap: 15px; }
-        .faq-item {
-            background: var(--section-bg-color); border: 1px solid var(--border-glass);
-            border-radius: 12px; box-shadow: var(--shadow-soft); overflow: hidden; transition: all 0.3s ease;
-            -webkit-transform: translateZ(0); transform: translateZ(0); /* Safari fix */
-        }
-        .faq-item:hover { border-color: var(--text-main-color); }
-        .faq-item summary {
-            padding: 20px; font-weight: 700; color: var(--text-main-color); cursor: pointer;
-            list-style: none; display: flex; justify-content: space-between; align-items: center;
-            font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;
-        }
-        .faq-item summary::-webkit-details-marker { display: none; }
-        .faq-item summary::after {
-            content: '\f078'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
-            color: var(--text-main-color); transition: transform 0.3s ease; font-size: 0.9rem;
-        }
-        .faq-item[open] summary { color: var(--text-main-color); }
-        .faq-item[open] summary::after { transform: rotate(180deg); }
-        .faq-body { padding: 0 20px 20px 20px; color: var(--text-secondary-color); font-size: 0.9rem; line-height: 1.6; font-weight: 500; }
-
-        /* --- FORMULÁRIO --- */
-        .form-group { margin-bottom: 20px; } 
-        .form-label { display: block; font-size: 0.8rem; color: var(--text-main-color); margin-bottom: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
-        .form-input, .form-select { width: 100%; padding: 15px; border-radius: 12px; border: 1px solid var(--border-glass); background: var(--input-bg); color: var(--text-main-color); font-size: 1rem; outline: none; transition: border-color 0.3s; }
-        textarea.form-input { resize: vertical; min-height: 80px; }
-        .form-input:focus, .form-select:focus { border-color: var(--text-main-color); }
-        .form-row { display: flex; gap: 15px; flex-wrap: wrap; }
-        .form-row .form-group { flex: 1; min-width: 130px; }
-
-        /* --- CTA FINAL --- */
-        .cta-final { background: var(--action-gradient); border-radius: var(--border-radius); padding: 40px 20px; text-align: center; border: 1px solid var(--border-glass); display: block; margin-bottom: 40px;}
-        .cta-final:hover { transform: translateY(-5px); box-shadow: 0 20px 40px var(--accent-glow); }
-        .cta-final h2 { font-family: var(--title-font); font-size: 1.8rem; color: var(--btn-text-solid); margin-bottom: 10px; font-weight: 700; line-height: 1.2; text-transform: uppercase;}
-        .cta-final p { color: var(--btn-text-solid); opacity: 0.9; margin-bottom: 20px; font-weight: 600;}
-        .cta-btn-inner { background: var(--section-bg-color); color: var(--text-main-color); display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px; border-radius: 50px; font-weight: 800; text-transform: uppercase; font-size: 0.9rem; }
-        body.light-theme .cta-btn-inner { background: #16181a; color: #ffffff; }
-
-        /* --- FOOTER --- */
-        footer { text-align: center; padding: 30px 20px; border-top: 1px solid var(--border-glass); font-size: 0.85rem; color: var(--text-secondary-color); margin-top: 20px;}
-        .footer-socials { display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; }
-        .footer-socials a { font-size: 1.5rem; color: var(--text-main-color); }
-        .footer-socials a:hover { color: var(--text-secondary-color); transform: translateY(-3px); }
-        
-        /* =========================================
-           MEDIA QUERIES (RESPONSIVIDADE AVANÇADA) 
-           ========================================= */
-        @media (max-width: 768px) {
-            .section-header h2 { font-size: 1.8rem; }
-            .hero { padding: 60px 15px 30px; }
-            .flex-wrap-container { flex-direction: column; align-items: center; }
-            .plan-card { min-width: 100%; max-width: 100%; }
-            .carousel-track > article { flex: 0 0 85vw !important; max-width: 320px; }
-        }
-        
-        @media (max-width: 480px) {
-            .section-header h2 { font-size: 1.6rem; }
-            .card { padding: 25px 20px; }
-            .about-stats { flex-direction: column; gap: 10px; }
-            .stat-item { width: 100%; }
-            .hero-logo { max-width: 200px; }
-        }
-    </style>
+    
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="bg-fixed"></div>
+    <div class="bg-fixed" aria-hidden="true"></div>
 
-    <div class="share-container">
-        <button class="share-toggle" onclick="toggleShareMenu()" aria-label="Compartilhar Link">
-            <i class="fas fa-share-alt"></i>
+    <aside class="share-container">
+        <button class="share-toggle" aria-label="Compartilhar Link" title="Compartilhar Link">
+            <i class="fas fa-share-alt" aria-hidden="true"></i>
         </button>
-        <div class="share-menu" id="shareMenu">
-            <button onclick="shareLink('whatsapp')" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></button>
-            <button onclick="shareLink('facebook')" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></button>
-            <button onclick="shareLink('tiktok')" aria-label="Copiar link para TikTok"><i class="fab fa-tiktok"></i></button>
-            <button onclick="shareLink('youtube')" aria-label="Copiar link para YouTube"><i class="fab fa-youtube"></i></button>
-        </div>
-    </div>
+        <nav class="share-menu" id="shareMenu" aria-label="Opções de Compartilhamento">
+            <button data-platform="whatsapp" aria-label="Compartilhar no WhatsApp" title="Compartilhar no WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+            <button data-platform="facebook" aria-label="Compartilhar no Facebook" title="Compartilhar no Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
+            <button data-platform="tiktok" aria-label="Copiar link para TikTok" title="Copiar link para TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></button>
+            <button data-platform="youtube" aria-label="Copiar link para YouTube" title="Copiar link para YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></button>
+        </nav>
+    </aside>
 
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Alternar Tema Claro/Escuro">
-        <i class="fas fa-sun"></i>
+    <button class="theme-toggle" aria-label="Alternar Tema Claro/Escuro" title="Alternar Tema">
+        <i class="fas fa-sun" aria-hidden="true"></i>
     </button>
 
     <main class="container">
         
         <header class="hero fade-up">
-            <h1 class="sr-only">Leo Silva - Personal Trainer</h1>
-            <img src="logo.jpeg" alt="Logotipo Leo Silva Personal Trainer" class="hero-logo">
+            <h1 class="sr-only">Leo Silva - Personal Trainer Premium</h1>
+            <img src="./image/logo.jpeg" alt="Logotipo Oficial Leo Silva Personal Trainer" class="hero-logo">
             <p class="hero-bio">Metodologia exclusiva de treinamento focada em resultados reais e excelência corporal.</p>
             
-            <nav class="action-grid" aria-label="Links principais">
-                <a href="https://wa.me/554891049153" class="btn-action">
-                    <i class="fab fa-whatsapp"></i> <span>Falar Agora</span>
+            <nav class="action-grid" aria-label="Links de ação rápidos">
+                <a href="https://wa.me/5521993912368" class="btn-action" title="Falar com o Treinador no WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> <span>Falar Agora</span>
                 </a>
-                <a href="#planos-consultoria" class="btn-action">
-                    <i class="fas fa-clipboard-list"></i> <span>Ver Planos</span>
+                <a href="#planos-consultoria" class="btn-action" title="Visualizar os planos de consultoria">
+                    <i class="fas fa-clipboard-list" aria-hidden="true"></i> <span>Ver Planos</span>
                 </a>
             </nav>
         </header>
 
-        <section id="sobre">
-            <div class="section-header fade-up">
-                <h2>Sobre o Treinador</h2>
-            </div>
+        <section id="sobre" aria-labelledby="sobre-titulo">
+            <header class="section-header fade-up">
+                <h2 id="sobre-titulo">Sobre o Treinador</h2>
+            </header>
             <article class="card about-wrapper fade-up" style="transition-delay: 0.1s;">
-                <img src="./perfil.jpeg" alt="Foto de Leo Silva, Personal Trainer" class="about-profile-pic">
+                <img src="./image/perfil.jpeg" alt="Foto de perfil de Leo Silva, Personal Trainer, sorrindo e em forma" class="about-profile-pic">
                 <div class="about-content">
                     <h3 class="about-title">Transformando corpos, fortalecendo a mente e <span class="highlight">elevando a autoestima.</span></h3>
                     
@@ -455,17 +119,17 @@
                         </div>
                         <div class="stat-item">
                             <div class="stat-number">3</div>
-                            <div class="stat-label">Paises Diferentes</div>
+                            <div class="stat-label">Países Diferentes</div>
                         </div>
                     </div>
                 </div>
             </article>
         </section>
 
-        <section id="metodologia">
-            <div class="section-header fade-up">
-                <h2>Metodologia</h2>
-            </div>
+        <section id="metodologia" aria-labelledby="metodologia-titulo">
+            <header class="section-header fade-up">
+                <h2 id="metodologia-titulo">Metodologia</h2>
+            </header>
             <article class="card fade-up" style="text-align: center; transition-delay: 0.1s;">
                 <p class="about-text" style="font-size: 1.05rem; margin-bottom: 20px;">
                     Minha metodologia foi desenvolvida para pessoas que buscam <span class="highlight">resultados reais, consistentes e duradouros</span>, sem complicação e totalmente adaptados à rotina.
@@ -481,16 +145,16 @@
             </article>
         </section>
 
-        <section id="como-funciona">
-            <div class="section-header fade-up">
-                <h2>Como Funciona</h2>
-            </div>
+        <section id="como-funciona" aria-labelledby="como-funciona-titulo">
+            <header class="section-header fade-up">
+                <h2 id="como-funciona-titulo">Como Funciona</h2>
+            </header>
             
             <article class="card fade-up" style="transition-delay: 0.2s;">
                 <div class="steps-container">
                     
                     <div class="step-item">
-                        <div class="step-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <div class="step-icon"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
                         <div class="step-content">
                             <h3 class="step-title">Avaliação Individual (Bioimpedância)</h3>
                             <p class="step-desc">Análise completa da sua composição corporal para direcionar o melhor caminho.</p>
@@ -498,7 +162,7 @@
                     </div>
                     
                     <div class="step-item">
-                        <div class="step-icon"><i class="fas fa-dumbbell"></i></div>
+                        <div class="step-icon"><i class="fas fa-dumbbell" aria-hidden="true"></i></div>
                         <div class="step-content">
                             <h3 class="step-title">Treino Personalizado</h3>
                             <p class="step-desc">Cada treino é pensado exclusivamente para seu objetivo, nível e rotina.</p>
@@ -506,7 +170,7 @@
                     </div>
                     
                     <div class="step-item">
-                        <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="step-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
                         <div class="step-content">
                             <h3 class="step-title">Progressão Estratégica</h3>
                             <p class="step-desc">Evolução planejada para garantir resultado sem estagnação.</p>
@@ -514,7 +178,7 @@
                     </div>
                     
                     <div class="step-item">
-                        <div class="step-icon"><i class="fas fa-comments"></i></div>
+                        <div class="step-icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
                         <div class="step-content">
                             <h3 class="step-title">Acompanhamento Contínuo</h3>
                             <p class="step-desc">Suporte próximo, ajustes frequentes e orientação constante.</p>
@@ -522,7 +186,7 @@
                     </div>
                     
                     <div class="step-item">
-                        <div class="step-icon"><i class="fas fa-shield-heart"></i></div>
+                        <div class="step-icon"><i class="fas fa-shield-heart" aria-hidden="true"></i></div>
                         <div class="step-content">
                             <h3 class="step-title">Treino Seguro e Adaptado</h3>
                             <p class="step-desc">Respeitando seu corpo, limitações e momento atual.</p>
@@ -533,16 +197,15 @@
             </article>
         </section>
 
-        <section id="servicos">
-            <div class="section-header fade-up">
-                <h2>O Que Oferecemos</h2>
+        <section id="servicos" aria-labelledby="servicos-titulo">
+            <header class="section-header fade-up">
+                <h2 id="servicos-titulo">O Que Oferecemos</h2>
                 <span class="section-subtitle">Escolha o modelo ideal para a sua rotina e objetivo.</span>
-            </div>
+            </header>
             
-            <div class="carousel-wrapper">
-                <div class="carousel-track">
+            <div class="flex-wrap-container fade-up" role="region" aria-label="Modalidades oferecidas">
                     <article class="service-img-card fade-up" style="transition-delay: 0.1s;">
-                        <img src="./treino-em-casa.jpeg" alt="Treinos em Casa">
+                        <img src="./image/treino-em-casa.jpeg" alt="Ilustração do programa de Treinos em Casa">
                         <div class="service-img-content">
                             <div class="level-badges">
                                 <span class="level-badge iniciante">Iniciante</span>
@@ -554,7 +217,7 @@
                     </article>
 
                     <article class="service-img-card fade-up" style="transition-delay: 0.2s;">
-                        <img src="./treino-gestante.jpeg" alt="Gestante Leo Team">
+                        <img src="./image/treino-gestante.jpeg" alt="Ilustração do programa de Treinos para Gestantes">
                         <div class="service-img-content">
                             <div class="level-badges">
                                 <span class="level-badge iniciante">Iniciante</span>
@@ -566,7 +229,7 @@
                     </article>
 
                     <article class="service-img-card fade-up" style="transition-delay: 0.3s;">
-                        <img src="./treinor1.jpeg" alt="Treinos R1">
+                        <img src="./image/treinor1.jpeg" alt="Ilustração do programa Treinos R1">
                         <div class="service-img-content">
                             <div class="level-badges">
                                 <span class="level-badge iniciante">Iniciante</span>
@@ -578,7 +241,7 @@
                     </article>
 
                     <article class="service-img-card fade-up" style="transition-delay: 0.4s;">
-                        <img src="./treino-das-musas.jpeg" alt="Treinos das Musas">
+                        <img src="./image/treino-das-musas.jpeg" alt="Ilustração do programa Treino das Musas">
                         <div class="service-img-content">
                             <div class="level-badges">
                                 <span class="level-badge iniciante">Iniciante</span>
@@ -589,32 +252,8 @@
                         </div>
                     </article>
                     
-                    <article class="service-img-card fade-up" style="transition-delay: 0.6s;">
-                        <img src="" alt="Planos Alimentares">
-                        <div class="service-img-content">
-                            <div class="level-badges">
-                                <span class="level-badge iniciante">Iniciante</span>
-                                <span class="level-badge intermediario">Intermediário</span>
-                                <span class="level-badge avancado">Avançado</span>
-                            </div>
-                            <h3 class="service-img-title">PLANOS ALIMENTARES</h3>
-                        </div>
-                    </article>
-                    
                     <article class="service-img-card fade-up" style="transition-delay: 0.7s;">
-                        <img src="" alt="Modalidades Cardio">
-                        <div class="service-img-content">
-                            <div class="level-badges">
-                                <span class="level-badge iniciante">Iniciante</span>
-                                <span class="level-badge intermediario">Intermediário</span>
-                                <span class="level-badge avancado">Avançado</span>
-                            </div>
-                            <h3 class="service-img-title">MODALIDADES CARDIO</h3>
-                        </div>
-                    </article>
-
-                    <article class="service-img-card fade-up" style="transition-delay: 0.7s;">
-                        <img src="./treino-na-academia.jpeg" alt="Modalidades Cardio">
+                        <img src="./image/treino-na-academia.jpeg" alt="Ilustração de acompanhamento em academia">
                         <div class="service-img-content">
                             <div class="level-badges">
                                 <span class="level-badge iniciante">Iniciante</span>
@@ -624,18 +263,17 @@
                             <h3 class="service-img-title">TREINO NA ACADEMIA</h3>
                         </div>
                     </article>
-                </div>
             </div>
         </section>
 
-        <section id="dicas-nutri">
-            <div class="section-header fade-up">
-                <h2>Dicas da Nutri</h2>
+        <section id="dicas-nutri" aria-labelledby="dicas-titulo">
+            <header class="section-header fade-up">
+                <h2 id="dicas-titulo">Dicas da Nutri</h2>
                 <span class="section-subtitle">Alimentação inteligente para potencializar seus resultados.</span>
-            </div>
+            </header>
             
             <article class="card about-wrapper fade-up" style="transition-delay: 0.1s;">
-                <img src="./nutri.jpeg" alt="Nutricionista parceira dando dicas de alimentação" class="nutri-img">
+                <img src="./image/nutri.jpeg" alt="Foto da Nutricionista parceira, sorrindo e orientando alimentação" class="nutri-img">
                 <div class="about-content">
                     <h3 class="about-title">O segredo está no <span class="highlight">Equilíbrio</span></h3>
                     
@@ -644,27 +282,27 @@
                     </p>
                     
                     <ul class="benefits-list" style="margin-top: 20px; text-align: left;">
-                        <li><i class="fas fa-apple-alt"></i> <span><strong>Frutas no Pré-Treino:</strong> Excelentes fontes de energia rápida para você render mais na academia sem pesar no estômago.</span></li>
-                        <li><i class="fas fa-tint"></i> <span><strong>A Regra da Água:</strong> Beba pelo menos 35ml a 40ml de água por kg de peso corporal todos os dias. A hidratação ajuda na definição e na força.</span></li>
-                        <li><i class="fas fa-drumstick-bite"></i> <span><strong>Proteína é a Base:</strong> Garanta uma boa fonte de proteína em todas as suas refeições principais para manter a saciedade e construir massa magra.</span></li>
+                        <li><i class="fas fa-apple-alt" aria-hidden="true"></i> <span><strong>Frutas no Pré-Treino:</strong> Excelentes fontes de energia rápida para você render mais na academia sem pesar no estômago.</span></li>
+                        <li><i class="fas fa-tint" aria-hidden="true"></i> <span><strong>A Regra da Água:</strong> Beba pelo menos 35ml a 40ml de água por kg de peso corporal todos os dias. A hidratação ajuda na definição e na força.</span></li>
+                        <li><i class="fas fa-drumstick-bite" aria-hidden="true"></i> <span><strong>Proteína é a Base:</strong> Garanta uma boa fonte de proteína em todas as suas refeições principais para manter a saciedade e construir massa magra.</span></li>
                     </ul>
 
                     <p class="about-text" style="font-size: 0.95rem; margin-top: 25px; font-weight: 600;">
                         Lembrando que nossa Consultoria Online inclui <span class="highlight">1 Consulta VIP com a Nutricionista</span> para alinhar sua dieta aos seus treinos!
                     </p>
 
-                    <a href="#planos-consultoria" class="btn-solid" style="display: inline-block; width: auto; padding: 15px 30px; margin-top: 15px; text-decoration: none;">Ver Planos com Nutri Inclusa</a>
+                    <a href="#planos-consultoria" class="btn-solid" style="display: inline-block; width: auto; padding: 15px 30px; margin-top: 15px; text-decoration: none;" title="Visualizar os Planos da Consultoria">Ver Planos com Nutri Inclusa</a>
                 </div>
             </article>
         </section>
 
-        <section id="planos-consultoria">
-            <div class="section-header fade-up">
-                <h2>Consultoria Online</h2>
+        <section id="planos-consultoria" aria-labelledby="consultoria-titulo">
+            <header class="section-header fade-up">
+                <h2 id="consultoria-titulo">Consultoria Online</h2>
                 <span class="section-subtitle" style="display: block; max-width: 600px; margin: 10px auto; font-weight: 700; color: var(--text-main-color);">
                     TREINO & SUGESTÃO ALIMENTAR / 1 CONSULTA ONLINE COM UMA NUTRICIONISTA PARCEIRA
                 </span>
-            </div>
+            </header>
 
             <div class="section-divider fade-up">Para Mulheres</div>
             <div class="flex-wrap-container fade-up">
@@ -675,15 +313,15 @@
                     <div class="plan-price">R$<span>39,94</span>/mês</div>
                     <div class="plan-price-sub">cobrado R$ 119,80 a cada 3 meses</div>
                     <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Todos os conteúdos atualizados a cada 5 semanas</li>
-                        <li><i class="fas fa-check"></i> Acesso ilimitado a diversas modalidades</li>
-                        <li><i class="fas fa-check"></i> Planos alimentares</li>
-                        <li><i class="fas fa-check"></i> Esclarecimento de dúvidas</li>
-                        <li><i class="fas fa-check"></i> Acesso contínuo por 3 meses</li>
-                        <li><i class="fas fa-check"></i> Cancele quando quiser</li>
-                        <li><i class="fas fa-check"></i> Garantia de 7 dias</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Todos os conteúdos atualizados a cada 5 semanas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Acesso ilimitado a diversas modalidades</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Planos alimentares</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Esclarecimento de dúvidas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Acesso contínuo por 3 meses</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Cancele quando quiser</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Garantia de 7 dias</li>
                     </ul>
-                    <button onclick="escolherPlano('Consultoria Online Mulheres - Trimestral')" class="btn-solid">Selecionar</button>
+                    <button data-plano="Consultoria Online Mulheres - Trimestral" class="btn-solid" title="Selecionar Plano Trimestral Mulheres">Selecionar</button>
                 </article>
 
                 <article class="plan-card">
@@ -691,14 +329,14 @@
                     <div class="plan-price">R$<span>49,90</span>/mês</div>
                     <div class="plan-price-sub">cobrança mensal recorrente</div>
                     <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Todos os conteúdos atualizados a cada 5 semanas</li>
-                        <li><i class="fas fa-check"></i> Acesso ilimitado a diversas modalidades</li>
-                        <li><i class="fas fa-check"></i> Planos alimentares</li>
-                        <li><i class="fas fa-check"></i> Esclarecimento de dúvidas</li>
-                        <li><i class="fas fa-check"></i> Cancele quando quiser</li>
-                        <li><i class="fas fa-check"></i> Garantia de 7 dias</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Todos os conteúdos atualizados a cada 5 semanas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Acesso ilimitado a diversas modalidades</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Planos alimentares</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Esclarecimento de dúvidas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Cancele quando quiser</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Garantia de 7 dias</li>
                     </ul>
-                    <button onclick="escolherPlano('Consultoria Online Mulheres - Mensal')" class="btn-outline">Selecionar</button>
+                    <button data-plano="Consultoria Online Mulheres - Mensal" class="btn-outline" title="Selecionar Plano Mensal Mulheres">Selecionar</button>
                 </article>
 
             </div>
@@ -712,15 +350,15 @@
                     <div class="plan-price">R$<span>26,60</span>/mês</div>
                     <div class="plan-price-sub">cobrado R$ 79,80 a cada 3 meses</div>
                     <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Todos os conteúdos atualizados a cada 5 semanas</li>
-                        <li><i class="fas fa-check"></i> Acesso ilimitado a diversas modalidades</li>
-                        <li><i class="fas fa-check"></i> Planos alimentares</li>
-                        <li><i class="fas fa-check"></i> Esclarecimento de dúvidas</li>
-                        <li><i class="fas fa-check"></i> Acesso contínuo por 3 meses</li>
-                        <li><i class="fas fa-check"></i> Cancele quando quiser</li>
-                        <li><i class="fas fa-check"></i> Garantia de 7 dias</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Todos os conteúdos atualizados a cada 5 semanas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Acesso ilimitado a diversas modalidades</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Planos alimentares</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Esclarecimento de dúvidas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Acesso contínuo por 3 meses</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Cancele quando quiser</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Garantia de 7 dias</li>
                     </ul>
-                    <button onclick="escolherPlano('Consultoria Online Homens - Trimestral')" class="btn-solid">Selecionar</button>
+                    <button data-plano="Consultoria Online Homens - Trimestral" class="btn-solid" title="Selecionar Plano Trimestral Homens">Selecionar</button>
                 </article>
 
                 <article class="plan-card">
@@ -728,26 +366,26 @@
                     <div class="plan-price">R$<span>39,90</span>/mês</div>
                     <div class="plan-price-sub">cobrança mensal recorrente</div>
                     <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Todos os conteúdos atualizados a cada 5 semanas</li>
-                        <li><i class="fas fa-check"></i> Acesso ilimitado a diversas modalidades</li>
-                        <li><i class="fas fa-check"></i> Planos alimentares</li>
-                        <li><i class="fas fa-check"></i> Esclarecimento de dúvidas</li>
-                        <li><i class="fas fa-check"></i> Cancele quando quiser</li>
-                        <li><i class="fas fa-check"></i> Garantia de 7 dias</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Todos os conteúdos atualizados a cada 5 semanas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Acesso ilimitado a diversas modalidades</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Planos alimentares</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Esclarecimento de dúvidas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Cancele quando quiser</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Garantia de 7 dias</li>
                     </ul>
-                    <button onclick="escolherPlano('Consultoria Online Homens - Mensal')" class="btn-outline">Selecionar</button>
+                    <button data-plano="Consultoria Online Homens - Mensal" class="btn-outline" title="Selecionar Plano Mensal Homens">Selecionar</button>
                 </article>
 
             </div>
         </section>
 
-        <section id="planos-presenciais">
-            <div class="section-header fade-up">
-                <h2>Treinamento Presencial</h2>
+        <section id="planos-presenciais" aria-labelledby="presencial-titulo">
+            <header class="section-header fade-up">
+                <h2 id="presencial-titulo">Treinamento Presencial</h2>
                 <span class="section-subtitle">Execução, intensidade e acompanhamento lado a lado.</span>
-            </div>
+            </header>
 
-            <div class="carousel-wrapper">
+            <div class="carousel-wrapper" role="region" aria-label="Planos Presenciais">
                 <div class="carousel-track">
 
                     <article class="plan-card featured fade-up" style="transition-delay: 0.1s;">
@@ -766,11 +404,11 @@
                         </div>
 
                         <ul class="plan-features">
-                            <li><i class="fas fa-check"></i> Frequência adaptável na semana</li>
-                            <li><i class="fas fa-check"></i> Ajuste biomecânico instantâneo</li>
-                            <li><i class="fas fa-check"></i> Levar o músculo até o limite com segurança</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Frequência adaptável na semana</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Ajuste biomecânico instantâneo</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Levar o músculo até o limite com segurança</li>
                         </ul>
-                        <button onclick="escolherPlano('Personal Presencial Individual')" class="btn-solid">Consultar Disponibilidade</button>
+                        <button data-plano="Personal Presencial Individual" class="btn-solid" title="Consultar Plano Presencial Individual">Consultar Disponibilidade</button>
                     </article>
 
                     <article class="plan-card fade-up" style="transition-delay: 0.2s;">
@@ -791,69 +429,69 @@
                         </div>
 
                         <ul class="plan-features">
-                            <li><i class="fas fa-check"></i> Treine com sua parceira(o) de treino</li>
-                            <li><i class="fas fa-check"></i> Dinamismo, parceria e motivação conjunta</li>
-                            <li><i class="fas fa-check"></i> Excelente relação de custo-benefício</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Treine com sua parceira(o) de treino</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Dinamismo, parceria e motivação conjunta</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Excelente relação de custo-benefício</li>
                         </ul>
-                        <button onclick="escolherPlano('Personal Presencial Em Dupla')" class="btn-outline">Consultar Disponibilidade</button>
+                        <button data-plano="Personal Presencial Em Dupla" class="btn-outline" title="Consultar Plano Presencial em Dupla">Consultar Disponibilidade</button>
                     </article>
 
                 </div>
             </div>
         </section>
 
-        <section id="resultados">
-            <div class="section-header fade-up">
-                <h2>Transformações Reais</h2>
+        <section id="resultados" aria-labelledby="resultados-titulo">
+            <header class="section-header fade-up">
+                <h2 id="resultados-titulo">Transformações Reais</h2>
                 <span class="section-subtitle">O resultado do trabalho focado.</span>
-            </div>
+            </header>
 
-            <div class="carousel-wrapper">
+            <div class="carousel-wrapper" role="region" aria-label="Fotos de transformações físicas de alunos">
                 <div class="carousel-track">
-                    <article class="resultado-card fade-up" style="transition-delay: 0.1s;">
-                        <img src="./resul-1.jpeg" alt="Resultado Antes e Depois" class="resultado-img">
-                    </article>
-                    <article class="resultado-card fade-up" style="transition-delay: 0.2s;">
-                        <img src="./resul-2.jpeg" alt="Resultado Antes e Depois" class="resultado-img">
-                    </article>
-                    <article class="resultado-card fade-up" style="transition-delay: 0.3s;">
-                        <img src="./resul-3.jpeg" alt="Resultado Antes e Depois" class="resultado-img">
-                    </article>
+                    <figure class="resultado-card fade-up" style="transition-delay: 0.1s; margin:0;">
+                        <img src="./image/resul-1.jpeg" alt="Foto de antes e depois da transformação de um aluno demonstrando hipertrofia" class="resultado-img">
+                    </figure>
+                    <figure class="resultado-card fade-up" style="transition-delay: 0.2s; margin:0;">
+                        <img src="./image/resul-2.jpeg" alt="Foto de antes e depois da transformação de uma aluna demonstrando definição e emagrecimento" class="resultado-img">
+                    </figure>
+                    <figure class="resultado-card fade-up" style="transition-delay: 0.3s; margin:0;">
+                        <img src="./image/resul-3.jpeg" alt="Foto de antes e depois da transformação de uma aluna com melhoria de tônus muscular" class="resultado-img">
+                    </figure>
                 </div>
             </div>
         </section>
 
-        <section id="feedbacks">
-            <div class="section-header fade-up">
-                <h2>O Que Dizem Nossos Alunos</h2>
+        <section id="feedbacks" aria-labelledby="feedbacks-titulo">
+            <header class="section-header fade-up">
+                <h2 id="feedbacks-titulo">O Que Dizem Nossos Alunos</h2>
                 <span class="section-subtitle">A satisfação de quem já transformou a rotina com o nosso método.</span>
-            </div>
+            </header>
 
-            <div class="carousel-wrapper">
+            <div class="carousel-wrapper" role="region" aria-label="Depoimentos de Alunos">
                 <div class="carousel-track">
                     
                     <article class="feedback-card fade-up" style="transition-delay: 0.1s;">
-                        <i class="fas fa-quote-right feedback-icon"></i>
+                        <i class="fas fa-quote-right feedback-icon" aria-hidden="true"></i>
                         <div class="feedback-stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
                         </div>
                         <p class="feedback-text">"Sempre treinei, mas os resultados estavam estagnados. Quando comecei o planejamento com o Leo, o jogo virou. Ajustou minha execução, aumentou a intensidade da forma certa e mudei completamente o shape e perdi as medidas que incomodavam. Profissional fora da curva."</p>
                         <span class="feedback-author">- Aluna Consultoria</span>
                     </article>
 
                     <article class="feedback-card fade-up" style="transition-delay: 0.2s;">
-                        <i class="fas fa-quote-right feedback-icon"></i>
+                        <i class="fas fa-quote-right feedback-icon" aria-hidden="true"></i>
                         <div class="feedback-stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
                         </div>
                         <p class="feedback-text">"O treino com ele não tem enrolação. Chega na academia é pra trabalhar duro. Ele tem uma didática excelente pra explicar onde você precisa sentir o músculo. Minha força dobrou e hoje me sinto muito mais confiante."</p>
                         <span class="feedback-author">- Aluno Presencial</span>
                     </article>
 
                     <article class="feedback-card fade-up" style="transition-delay: 0.3s;">
-                        <i class="fas fa-quote-right feedback-icon"></i>
+                        <i class="fas fa-quote-right feedback-icon" aria-hidden="true"></i>
                         <div class="feedback-stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
                         </div>
                         <p class="feedback-text">"Achei que consultoria online não funcionava pra mim, mas o aplicativo dele é super intuitivo. Os vídeos de execução não deixam margem pra erro, e ele sempre responde rápido no Whats para analisar meus vídeos de treino. Muito obrigada por toda paciência e dedicação!"</p>
                         <span class="feedback-author">- Aluna Online</span>
@@ -863,11 +501,11 @@
             </div>
         </section>
 
-        <section id="entregas">
-            <div class="section-header fade-up">
-                <h2>O Que Você Vai Receber?</h2>
+        <section id="entregas" aria-labelledby="entregas-titulo">
+            <header class="section-header fade-up">
+                <h2 id="entregas-titulo">O Que Você Vai Receber?</h2>
                 <span class="section-subtitle">Entenda tudo o que está incluso no seu acompanhamento.</span>
-            </div>
+            </header>
 
             <div class="faq-container">
                 <details class="faq-item fade-up" style="transition-delay: 0.1s;">
@@ -907,13 +545,13 @@
             </div>
         </section>
 
-        <section id="aplicacao">
-            <div class="section-header fade-up">
-                <h2>Ficha de Aplicação</h2>
+        <section id="aplicacao" aria-labelledby="formulario-titulo">
+            <header class="section-header fade-up">
+                <h2 id="formulario-titulo">Ficha de Aplicação</h2>
                 <span class="section-subtitle">Preencha os dados e dê o primeiro passo para o seu novo físico.</span>
-            </div>
+            </header>
             
-            <form class="card fade-up" onsubmit="enviarAnamnese(event)">
+            <form class="card fade-up" aria-label="Formulário de inscrição para a consultoria">
                 <div class="form-group">
                     <label class="form-label" for="planSelect">Interesse</label>
                     <select id="planSelect" class="form-select" required>
@@ -984,17 +622,17 @@
                     <input type="text" id="painInput" class="form-input" placeholder="Ex: Desconforto no joelho ao agachar... (Deixe em branco se não tiver)">
                 </div>
 
-                <button type="submit" class="btn-solid" style="margin-top: 10px; padding: 18px;">
-                    <i class="fab fa-whatsapp"></i> Enviar Ficha
+                <button type="submit" class="btn-solid" style="margin-top: 10px; padding: 18px;" title="Enviar o formulário via WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Enviar Ficha
                 </button>
             </form>
         </section>
 
-        <a href="https://wa.me/554891049153" class="cta-final fade-up">
+        <a href="https://wa.me/5521993912368" class="cta-final fade-up" title="Iniciar atendimento pelo WhatsApp">
             <h2>Pronto(a) para a Mudança?</h2>
             <p>Clique abaixo e fale diretamente comigo no WhatsApp para darmos início.</p>
             <div class="cta-btn-inner">
-                <i class="fab fa-whatsapp"></i> Iniciar Contato
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> Iniciar Contato
             </div>
         </a>
 
@@ -1002,107 +640,10 @@
 
     <footer class="container fade-up">
         <div class="footer-socials">
-            <a href="#" aria-label="Instagram do Leo Silva"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Instagram Oficial do Leo Silva" title="Acessar Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         </div>
         <p>&copy; 2026 Leo Silva Personal Trainer. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        // --- 1. Sitema de Scroll Animations (Intersection Observer) ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.15 
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); 
-                    }
-                });
-            }, observerOptions);
-
-            const fadeElements = document.querySelectorAll('.fade-up');
-            fadeElements.forEach(el => observer.observe(el));
-        });
-
-        // --- 2. Sistema de Troca de Tema ---
-        function toggleTheme() {
-            const body = document.body;
-            body.classList.toggle('light-theme');
-            const icon = document.querySelector('.theme-toggle i');
-            
-            if(body.classList.contains('light-theme')){ 
-                icon.classList.replace('fa-sun', 'fa-moon'); 
-                localStorage.setItem('theme-leo', 'light'); 
-            } else { 
-                icon.classList.replace('fa-moon', 'fa-sun'); 
-                localStorage.setItem('theme-leo', 'dark'); 
-            }
-        }
-        
-        if(localStorage.getItem('theme-leo') === 'light' || 
-          (!localStorage.getItem('theme-leo') && window.matchMedia('(prefers-color-scheme: light)').matches)) { 
-            document.body.classList.add('light-theme'); 
-            document.querySelector('.theme-toggle i').classList.replace('fa-sun', 'fa-moon'); 
-        }
-
-        // --- 3. Sistema do Menu de Compartilhamento ---
-        function toggleShareMenu() {
-            const menu = document.getElementById('shareMenu');
-            menu.classList.toggle('active');
-        }
-
-        document.addEventListener('click', function(event) {
-            const shareContainer = document.querySelector('.share-container');
-            const shareMenu = document.getElementById('shareMenu');
-            if (!shareContainer.contains(event.target) && shareMenu.classList.contains('active')) {
-                shareMenu.classList.remove('active');
-            }
-        });
-
-        function shareLink(platform) {
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('Confira o trabalho do Leo Silva - Personal Trainer: ');
-            
-            if (platform === 'whatsapp') {
-                window.open(`https://api.whatsapp.com/send?text=${text}${url}`, '_blank');
-            } else if (platform === 'facebook') {
-                window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-            } else {
-                navigator.clipboard.writeText(window.location.href).then(() => {
-                    alert(`Link copiado com sucesso! Você pode colar no seu ${platform === 'tiktok' ? 'TikTok' : 'YouTube'}.`);
-                    document.getElementById('shareMenu').classList.remove('active');
-                });
-            }
-        }
-
-        // --- 4. Envio do formulário via WhatsApp ---
-        function enviarAnamnese(event) {
-            event.preventDefault(); 
-
-            const plano = document.getElementById('planSelect').value;
-            const nome = document.getElementById('clientName').value;
-            const idade = document.getElementById('clientAge').value;
-            const sexo = document.getElementById('clientGender').value;
-            const nivel = document.getElementById('levelSelect').value;
-            const dias = document.getElementById('trainingDays').value;
-            const objetivo = document.getElementById('goalInput').value;
-            const dores = document.getElementById('painInput').value;
-            
-            const mensagem = `Fala Leo! Preenchi a ficha de aplicação no site:%0A%0A*--- DADOS ---*%0A*Nome:* ${nome}%0A*Idade:* ${idade} anos%0A*Sexo:* ${sexo}%0A*Nível:* ${nivel}%0A*Disponibilidade:* ${dias}%0A*Plano:* ${plano}%0A%0A*--- OBJETIVO ---*%0A${objetivo}%0A%0A*--- DORES/LESÕES ---*%0A${dores ? dores : 'Nenhuma'}`;
-            
-            window.open(`https://wa.me/554891049153?text=${mensagem}`, '_blank');
-        }
-
-        // --- 5. Botões rápidos de planos ---
-        function escolherPlano(plano) {
-            const mensagem = `Fala Leo! Tenho interesse no plano *${plano}*, pode me passar mais detalhes?`;
-            window.open(`https://wa.me/554891049153?text=${mensagem}`, '_blank');
-        }
-    </script>
+    <script src="./js/script.js" defer></script>
 </body>
 </html>
