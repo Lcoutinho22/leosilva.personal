@@ -1,0 +1,20 @@
+LEO SILVA — SITE
+
+Para visualizar: abra index.html no navegador.
+Mantenha as pastas css, js e image junto ao index.html.
+
+Inclui: layout adaptável, menu para celular, planos feminino e masculino,
+seleção de plano, perguntas frequentes e formulário que prepara uma
+mensagem no WhatsApp. O visitante revisa e envia a mensagem no WhatsApp.
+Não há armazenamento de dados, pagamento ou contratação automática.
+
+Valores, telefone e imagens vieram do site original fornecido.
+As fontes utilizam Google Fonts e dependem de internet, com fontes locais
+alternativas quando indisponíveis.
+
+Para hospedar: envie index.html e as pastas css, js e image à pasta pública
+da hospedagem. Esta entrega não foi publicada na internet.
+
+Verificação: referências locais e sintaxe JavaScript conferidas.
+A conferência visual em navegador ficou pendente por indisponibilidade
+da conexão com a prévia local neste ambiente.
