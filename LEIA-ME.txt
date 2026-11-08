@@ -1,20 +1,22 @@
-LEO SILVA — SITE
+LEO SILVA — BIBLIOTECA DE PROGRAMAS DE TREINO (PRODUTO DIGITAL)
 
-Para visualizar: abra index.html no navegador.
-Mantenha as pastas css, js e image junto ao index.html.
+ATUALIZAÇÃO DE POSICIONAMENTO E PRODUTO:
+- O produto principal foi reposicionado como Produto Digital Escalável: uma Biblioteca de Programas de Treinamento Estruturados.
+- O cliente adquire o acesso a programas padronizados e validados desenvolvidos pelo Leo Silva, filtrando por objetivo, ambiente (academia/casa), nível de experiência e tempo disponível.
+- Eliminação da promessa de consultoria individualizada tradicional ou horas de atendimento digital, permitindo escala sem gargalo de tempo.
+- Manutenção do atendimento presencial exclusivamente como serviço premium de alto valor agregado (VIP) com vagas limitadas.
 
-Inclui: layout adaptável, menu para celular, planos feminino e masculino,
-seleção de plano, perguntas frequentes e formulário que prepara uma
-mensagem no WhatsApp. O visitante revisa e envia a mensagem no WhatsApp.
-Não há armazenamento de dados, pagamento ou contratação automática.
+MODELOS COMERCIAIS DISPONÍVEIS:
+1. Programa Avulso: Pagamento único no PIX ou Cartão (sem mensalidade). O cliente compra 1 programa específico com acesso ao material e vídeos.
+2. Assinatura da Biblioteca (Recorrente): Acesso ilimitado e contínuo a todos os programas do catálogo (F1 Rápido, Gestante, Musas Feminino, Academia Completa, Casa/Viagens), novas fichas e atualizações periódicas (Mensal R$ 39,90 ou Trimestral R$ 89,90).
+3. Personal Presencial VIP: Atendimento individual ou em dupla presencial com o Leo na academia.
 
-Valores, telefone e imagens vieram do site original fornecido.
-As fontes utilizam Google Fonts e dependem de internet, com fontes locais
-alternativas quando indisponíveis.
+NOVAS CATEGORIAS ADICIONADAS:
+- Treino Rápido (Treino F1): Sessões de 40 a 50 minutos planejadas para máxima eficiência metabólica e de tempo.
+- Treinamento durante a Gestação: Categoria especializada com critérios rigorosos de segurança e triagem biomecânica por trimestre.
 
-Para hospedar: envie index.html e as pastas css, js e image à pasta pública
-da hospedagem. Esta entrega não foi publicada na internet.
-
-Verificação: referências locais e sintaxe JavaScript conferidas.
-A conferência visual em navegador ficou pendente por indisponibilidade
-da conexão com a prévia local neste ambiente.
+ESTRUTURA DE ARQUIVOS:
+- index.html: Código semântico com novos cards, filtros e precificação.
+- css/style.css: Estilos responsivos, filtros interativos, chips de badges e destaque visual.
+- js/script.js: Sistema de filtros dinâmicos, alternância de períodos (mensal/trimestral), tabs e integração com WhatsApp.
+- image/: Imagens otimizadas das categorias e resultados.
